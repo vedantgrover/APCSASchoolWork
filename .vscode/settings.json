@@ -1,0 +1,16 @@
+{
+    "java.project.sourcePaths": [
+        "practice-coding",
+        "in-class-coding",
+        "code-challenges",
+        "TestingProjects/RoboticsTestingCode",
+        "TestingProjects/AP Quiz Testing",
+        "Projects/Review",
+        "Projects/MemoryGameProject",
+        "Projects/InventoryProject",
+        "Projects/HorseBarnFiles",
+        "Projects/Game Of Nims",
+        "Projects/ClassroomRunner",
+        "TestingProjects"
+    ]
+}
