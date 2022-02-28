@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class MergeLists {
+public class MergeListsIntegers {
     /**
      * This method merges two ArrayList<Integers> by creating a new ArrayList that
      * is
@@ -14,22 +14,22 @@ public class MergeLists {
      * @return ArrayList<Integer> that is the merged and sorted of the two input
      *         ArrayLists
      */
-    public static ArrayList<Horse> mergeLists(ArrayList<Horse> list1, ArrayList<Horse> list2) {
-        ArrayList<Horse> newArr = new ArrayList<Horse>();
+    public static ArrayList<Integer> mergeLists(ArrayList<Integer> list1, ArrayList<Integer> list2) {
+        ArrayList<Integer> newArr = new ArrayList<Integer>();
 
-        for (Horse h : list1) {
-            newArr.add(h);
+        for (Integer num : list1) {
+            newArr.add(num);
         }
         
-        for (Horse h : list2) {
-            newArr.add(h);
+        for (Integer num : list2) {
+            newArr.add(num);
         }
 
         return sort(newArr);
     }
 
-    public static ArrayList<Horse> sort(ArrayList<Horse> arrList) {
-        ArrayList<Horse> newArr = new ArrayList<Horse>(); // New ArrayList we will be returning
+    public static ArrayList<Integer> sort(ArrayList<Integer> arrList) {
+        ArrayList<Integer> newArr = new ArrayList<Integer>(); // New ArrayList we will be returning
 
         for (int i = 0; i < arrList.size(); i++) {
             /*
@@ -49,36 +49,25 @@ public class MergeLists {
         return newArr;
     }
 
-    public static Horse min(ArrayList<Horse> arrList) {
-        int minimum = arrList.get(0).getHeight();
-        for (Horse h : arrList) {
-            if (h.getHeight() < minimum) {
-                minimum = h.getHeight();
+    public static int min(ArrayList<Integer> arrList) {
+        int minimum = arrList.get(0);
+        for (Integer num : arrList) {
+            if (num < minimum) {
+                minimum = num;
             }
         }
 
-        for (Horse h : arrList) {
-            if (h.getHeight() == minimum) {
-                return h;
-            }
-        }
-
-        return null;
+        return minimum;
     }
 
     public static void main(String[] args) {
-        ArrayList<Horse> listOne = new ArrayList<Horse>();
-        ArrayList<Horse> listTwo = new ArrayList<Horse>();
+        ArrayList<Integer> listOne = new ArrayList<Integer>();
+        ArrayList<Integer> listTwo = new ArrayList<Integer>();
 
-        listOne.add(new Horse("Cheese", 1234, 34));
-        listOne.add(new Horse("Epona", 4324, 23));
-        listOne.add(new Horse("Shorty", 1265, 10));
-        listOne.add(new Horse("Jasper", 4321, 35));
-
-        listTwo.add(new Horse("Gasper", 5424, 123));
-        listTwo.add(new Horse("Lepona", 1342, 67));
-        listTwo.add(new Horse("Shortery", 1342, 9));
-        listTwo.add(new Horse("Talli", 1432, 54));
+        for (int i = 0; i < 10; i++) {
+            listOne.add((int) (Math.random() * 10 - i) + 1);
+            listTwo.add((int) (Math.random() * 10 - i) + 1);
+        }
 
         System.out.println(listOne);
         System.out.println(listTwo);
