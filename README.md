@@ -17,5 +17,5 @@ logic and so understanding how different methods or variables interact with each
 
 I had a lot of fun in this class. I hope you do too. Enjoy!
 
-Have Fun and Don't die
+Have Fun and Don't die,
  - Blade
