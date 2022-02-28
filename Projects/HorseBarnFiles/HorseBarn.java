@@ -37,9 +37,10 @@ public class HorseBarn {
           String[] tokens = temp.split(",");
           String name = tokens[0];
           int weight = Integer.parseInt(tokens[1]);
+          int height = Integer.parseInt(tokens[2]);
 
           // add the horse to the array list
-          spaces.add(new Horse(name, weight));
+          spaces.add(new Horse(name, weight, height));
         }
       }
     } catch (Exception e) {

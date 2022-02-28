@@ -4,14 +4,24 @@
 public class Horse {
   private String name;
   private int weight;
+  private int height;
 
   /**
    * The constructor for a horse. All horses require
    * a name and their weight.
    */
-  public Horse(String n, int w) {
+  public Horse(String n, int w, int h) {
     name = n;
     weight = w;
+    setHeight(h);
+  }
+
+  public int getHeight() {
+    return height;
+  }
+
+  public void setHeight(int height) {
+    this.height = height;
   }
 
   /**

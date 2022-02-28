@@ -5,12 +5,14 @@
         "code-challenges",
         "TestingProjects/RoboticsTestingCode",
         "TestingProjects/AP Quiz Testing",
+        "TestingProjects",
         "Projects/Review",
         "Projects/MemoryGameProject",
         "Projects/InventoryProject",
         "Projects/HorseBarnFiles",
         "Projects/Game Of Nims",
         "Projects/ClassroomRunner",
-        "TestingProjects"
+        "Projects/3.7SummativeSupplement",
+        "Projects/ArrayListSummativeSupplement"
     ]
 }

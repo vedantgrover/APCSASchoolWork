@@ -34,18 +34,18 @@ public class HorseBarnRunner {
 
     for (int i = 0; i < barnSpaces.size(); i++) {
       if (barnSpaces.get(i).getName().equals("Duke")) {
-        System.out.println("Out goes " + barnSpaces.set(i, new Horse("Princess", 1445)) + ". In comes Princess!");
+        System.out.println("Out goes " + barnSpaces.set(i, new Horse("Princess", 1445, 43)) + ". In comes Princess!");
       }
 
       if (barnSpaces.get(i).getName().equals("Silver")) {
-        barnSpaces.add(i + 1, new Horse("Chief", 1505));
+        barnSpaces.add(i + 1, new Horse("Chief", 1505, 23));
         System.out.println("In comes Chief");
       }
 
       if (barnSpaces.get(i).getName().equals("Buddy")) {
-        barnSpaces.add(i, new Horse("Gypsy", 1335));
+        barnSpaces.add(i, new Horse("Gypsy", 1335, 45));
         i++;
-        barnSpaces.add(i + 1, new Horse("Magic", 1425));
+        barnSpaces.add(i + 1, new Horse("Magic", 1425, 25));
         System.out.println("Woah...Gypsy and Magic are here. That's insane");
       }
     }
