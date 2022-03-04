@@ -69,5 +69,11 @@ public class RentIn2DArray {
 
         System.out.println("2nd Floor Average " + (sum/rent[2].length));
 
+        sum = 0;
+        for (int i = 0; i < rent.length; i++) {
+            sum += rent[i][1];
+        }
+
+        System.out.println("One Bedroom Average " + (sum/rent.length));
     }
 }
