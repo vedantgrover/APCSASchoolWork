@@ -1,4 +1,4 @@
-package Concentration;
+package ConcentrationGUI;
 
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;

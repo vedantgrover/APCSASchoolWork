@@ -1,4 +1,4 @@
-package Concentration;
+package ConcentrationGUI;
 
 /** 
  * A game board of NxM board of tiles.

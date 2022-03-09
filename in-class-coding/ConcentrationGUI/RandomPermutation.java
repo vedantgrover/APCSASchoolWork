@@ -1,5 +1,12 @@
-public class RandomPermutations {
+package ConcentrationGUI;
 
+public class RandomPermutation {
+
+    /**
+     * Generates a random perumuation of the numbers 1 thru 10
+     * 
+     * @return int array [1,2,3,...,10] but RANDOMIZED
+     */
     public static int[] next(int maxVal) {
         int[] nums = new int[maxVal];
         int[] randomNums = new int[nums.length];
