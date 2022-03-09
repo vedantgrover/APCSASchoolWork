@@ -88,6 +88,10 @@ public class Board {
    */
   public boolean validateSelection(int row, int col) {
 
+    if (gameboard[row][col].isShowingValue() || gameboard[row][col].matched()) {
+      return false;
+    }
+
     if (row >= gameboard.length)
       return false;
     if (col >= gameboard[0].length)
