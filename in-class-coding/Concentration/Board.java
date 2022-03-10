@@ -71,6 +71,8 @@ public class Board {
     if (gameboard[row1][col1].getValue().equals(gameboard[row2][col2].getValue())) {
       gameboard[row1][col1].show();
       gameboard[row2][col2].show();
+      gameboard[row1][col1].foundMatch();
+      gameboard[row2][col2].foundMatch();
       return "Matched!";
     } else {
       gameboard[row1][col1].hide();
@@ -87,6 +89,10 @@ public class Board {
    * @return true if valid input
    */
   public boolean validateSelection(int row, int col) {
+
+    if (gameboard[row][col].matched() || gameboard[row][col].isShowingValue()) {
+      return false;
+    }
 
     if (row >= gameboard.length)
       return false;
@@ -111,11 +117,11 @@ public class Board {
     for (Tile[] row : gameboard) {
       for (Tile t : row) {
         if (t.matched()) {
-          result += t.getValue();
+          result += t.getValue() + "\t";
         } else if (t.isShowingValue()) {
-          result += t.getValue();
+          result += t.getValue() + "\t";
         } else
-          result += t.getHidden();
+          result += t.getHidden() + "\t";
       }
       result += "\n";
     }

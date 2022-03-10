@@ -71,6 +71,8 @@ public class Board {
     if (gameboard[row1][col1].getValue().equals(gameboard[row2][col2].getValue())) {
       gameboard[row1][col1].show();
       gameboard[row2][col2].show();
+      gameboard[row1][col1].foundMatch();
+      gameboard[row2][col2].foundMatch();
       return "Matched!";
     } else {
       gameboard[row1][col1].hide();
@@ -109,17 +111,22 @@ public class Board {
    * 
    * @return 3x4 arranged String of current gameboard
    */
+  /**
+   * Gets a string that represents the board in it's current state
+   * 
+   * @return 3x4 arranged String of current gameboard
+   */
   public String toString() {
     String result = "";
 
     for (Tile[] row : gameboard) {
       for (Tile t : row) {
         if (t.matched()) {
-          result += t.getValue();
+          result += t.getValue() + "\t";
         } else if (t.isShowingValue()) {
-          result += t.getValue();
+          result += t.getValue() + "\t";
         } else
-          result += t.getHidden();
+          result += t.getHidden() + "\t";
       }
       result += "\n";
     }
