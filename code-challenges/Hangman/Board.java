@@ -21,7 +21,7 @@ public class Board {
         this.phrase = phrase.toUpperCase();
         solvedBoard = getBoard();
 
-        System.out.println(this.phrase);
+        //System.out.println(this.phrase);
         System.out.println(solvedBoard);
     }
 
@@ -29,7 +29,7 @@ public class Board {
         this.phrase = loadPhrase();
         solvedBoard = getBoard();
 
-        System.out.println(phrase);
+        //System.out.println(phrase);
         System.out.println(solvedBoard);
     }
 
@@ -125,7 +125,7 @@ public class Board {
                         solvedPhrase[i] = letter.toUpperCase().charAt(0);
                         pointsRemaining -= getLetterPointValue(letter);
                         guessPoints += getLetterPointValue(letter);
-                        System.out.println(pointsRemaining);
+                        //System.out.println(pointsRemaining);
                     }
                 }
             }

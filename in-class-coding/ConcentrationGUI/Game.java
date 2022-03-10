@@ -114,17 +114,17 @@ public class Game {
     return true;
   }
 
-  /**
-   * Wait n seconds before clearing the console
-   */
-  private void wait(int n) {
-    // a try is like an if statement, "throwing" an error if the body of the try
-    // fails
-    try {
-      Thread.sleep(n * 1000);
-    } catch (InterruptedException e) {
-      /* do nothing */ }
-  }
+  // /**
+  //  * Wait n seconds before clearing the console
+  //  */
+  // private void wait(int n) {
+  //   // a try is like an if statement, "throwing" an error if the body of the try
+  //   // fails
+  //   try {
+  //     Thread.sleep(n * 1000);
+  //   } catch (InterruptedException e) {
+  //     /* do nothing */ }
+  // }
 
   /**
    * User quits game

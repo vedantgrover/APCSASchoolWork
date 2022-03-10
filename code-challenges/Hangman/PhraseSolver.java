@@ -26,11 +26,10 @@ public class PhraseSolver {
             if (playerTurn % 2 == 0) {
                 System.out.println(player1.getName() + "'s turn.");
                 String userLetter = sc.nextLine();
-                System.out.println(gameBoard.getLetterPointValue(userLetter));
+                //System.out.println(gameBoard.getLetterPointValue(userLetter));
                 System.out.println(gameBoard.updateBoard(userLetter));
                 player1.scoreUp(gameBoard.guessPoints);
                 System.out.println("Player 1 Score : " + player1.getScore());
-
             } else if (playerTurn % 2 == 1) {
                 System.out.println(player2.getName() + "'s turn.");
                 String userLetter = sc.nextLine();
@@ -39,6 +38,7 @@ public class PhraseSolver {
                 player2.scoreUp(gameBoard.guessPoints);
                 System.out.println("Player 2 Score : " + player2.getScore());
             }
+            playerTurn++;
 
             if (gameBoard.isSolved) {
                 gameOver = true;
