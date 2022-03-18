@@ -119,15 +119,17 @@ public class Board {
   public String toString() {
     String result = "";
 
+    int currentRow = 0;
+    result += "\t=~0~=\t=~1~=\t=~2~=\t=~3~=\n";
     for (Tile[] row : gameboard) {
+      result += "=~" + currentRow + "~=\t";
       for (Tile t : row) {
-        if (t.matched()) {
-          result += t.getValue() + "\t";
-        } else if (t.isShowingValue()) {
+        if (t.matched() || t.isShowingValue()) {
           result += t.getValue() + "\t";
         } else
           result += t.getHidden() + "\t";
       }
+      currentRow++;
       result += "\n";
     }
 
