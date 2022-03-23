@@ -1,11 +1,13 @@
 {
     "java.project.sourcePaths": [
+        "utils",
         "practice-coding",
         "in-class-coding",
         "code-challenges",
         "TestingProjects/RoboticsTestingCode",
         "TestingProjects/AP Quiz Testing",
         "TestingProjects",
+        "Projects/TwoDeeArraySupplement",
         "Projects/Review",
         "Projects/MemoryGameProject",
         "Projects/InventoryProject",
@@ -13,6 +15,6 @@
         "Projects/Game Of Nims",
         "Projects/ClassroomRunner",
         "Projects/ArrayListSummativeSupplement",
-        "utils"
+        "Projects/RPGActivity"
     ]
 }

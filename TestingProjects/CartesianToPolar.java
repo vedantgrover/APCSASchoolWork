@@ -1,6 +1,6 @@
 public class CartesianToPolar {
 
-    public static final double xValue = 0;
+    public static final double xValue = 1;
     public static final double yValue = -1;
     public static final double currentAngle = 0;
     public static boolean doTurn = true;
