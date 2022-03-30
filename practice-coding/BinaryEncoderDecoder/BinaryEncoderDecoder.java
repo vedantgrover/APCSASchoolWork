@@ -14,7 +14,9 @@ public class BinaryEncoderDecoder {
             if (userResponse.toLowerCase().contains("encode") || userResponse.toLowerCase().equals("e")) {
                 System.out.print("Great. Input a number >> ");
                 int userNumber = sc.nextInt();
-                System.out.println(encode(userNumber));
+                encodeRec(userNumber);
+                System.out.println();
+                //System.out.println(encode(userNumber));
             } else if (userResponse.toLowerCase().contains("decode") || userResponse.toLowerCase().equals("d")) {
                 System.out.print("Great. Input your binary code >> ");
                 String userBinNumber = sc.nextLine();
@@ -54,6 +56,15 @@ public class BinaryEncoderDecoder {
         // System.out.println(place);
         return result;
 
+    }
+
+    public static void encodeRec(int num) {
+        if (num < 2) {
+            System.out.print(num);
+        } else {
+            encodeRec(num/2);
+            System.out.print(num%2);
+        }
     }
 
     public static int decode(String binNum) {

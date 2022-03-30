@@ -1,3 +1,5 @@
+package RPGGame;
+
 public class Character {
     protected String name;
     protected int health;
